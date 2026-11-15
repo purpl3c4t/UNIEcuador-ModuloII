@@ -1,4 +1,4 @@
-# 1.1 Fundamentos de UEBA y LoTL 
+# Laboratorio 1.1: Detección de Living off the Land con Deep Autoencoders
 ---
 ## Objetivo: 
 Demostrar el fenómeno del "colapso de contexto" mediante utilidades nativas firmadas por Microsoft (LOLBins), constatar la ineficacia de un SIEM de firmas y construir un detector no supervisado basado en Deep Autoencoders para alertar sobre ejecuciones atípicas mediante el Error Cuadrático Medio (MSE).
@@ -29,6 +29,7 @@ Implementar y entrena la red neuronal utilizando únicamente el subconjunto beni
 Calcular el error de reconstrucción sobre el tráfico normal para fijar el umbral analítico al percentil 99 ($P_{99}$), y evalúa las muestras de ataque evasivo.
 
 ## Preguntas de Control y Validación 
+---
 Si un atacante reduce la longitud de su comando utilizando nombres cortos de carpetas y ejecuta en horario diurno:
 * ¿cuál de las características restantes mantendría elevado el error MSE del autoencoder?
 * ¿Por qué una regla de correlación estática en el SIEM como CommandLine CONTAINS "certutil.exe" fracasa en entornos empresariales donde los administradores usan esa herramienta para renovar certificados de Active Directory?
