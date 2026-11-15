@@ -1,0 +1,46 @@
+[
+    {
+        "post_id": "cti_post_1001",
+        "forum": "UndergroundSec_Archive",
+        "author": "analyst_watcher",
+        "author_reputation": 4.8,
+        "timestamp": "2026-10-12T03:14:00Z",
+        "title": "Discussion on CVE-2023-34362 vulnerability vector and campaign activity",
+        "content": "Threat intelligence advisory regarding vulnerability CVE-2023-34362 associated with group TA505. Observed infrastructure uses C2 address 194.165.16.44 communicating over secure ports. Payload artifact identified with hash sha256 d41d8cd98f00b204e9800998ecf8427e99887766554433221100aabbccddeeff. Affected systems include enterprise file transfer platforms.",
+        "views": 1420,
+        "replies": 38
+    },
+    {
+        "post_id": "cti_post_1002",
+        "forum": "CyberSec_Research_Board",
+        "author": "telemetry_lead",
+        "author_reputation": 4.9,
+        "timestamp": "2026-10-15T11:20:00Z",
+        "title": "Identity verification bypass using CVE-2024-1709 telemetry",
+        "content": "Analysis of campaign attributed to threat group Scattered Spider exploiting CVE-2024-1709 in remote management portals. Identified suspicious network listener active at IP 185.220.101.5 and domain sso-portal-verify.internal-auth.net. Binary sample associated with md5 hash 5d41402abc4b2a76b9719d911017c592.",
+        "views": 2890,
+        "replies": 74
+    },
+    {
+        "post_id": "cti_post_1003",
+        "forum": "DarkNet_ThreatIntel_Hub",
+        "author": "incident_responder",
+        "author_reputation": 3.7,
+        "timestamp": "2026-10-18T18:45:00Z",
+        "title": "BlackCat ALPHV cluster activity and FortiOS vulnerability CVE-2024-21762",
+        "content": "Technical bulletin tracking BlackCat threat cluster exploiting FortiOS CVE-2024-21762. Network indicators report secondary C2 relay at 45.142.212.100. Sample hash sha256 a3c114ef72d4b971a1c970428d003b8791e8432a67711293a9203e8432b001fc observed in credential dumping stage.",
+        "views": 940,
+        "replies": 19
+    },
+    {
+        "post_id": "cti_post_1004",
+        "forum": "Informational_Board",
+        "author": "general_user",
+        "author_reputation": 2.1,
+        "timestamp": "2026-10-20T08:10:00Z",
+        "title": "General discussion regarding corporate password hygiene and MFA",
+        "content": "Discussion on general security controls and employee password rotation policies without specific telemetry indicators.",
+        "views": 410,
+        "replies": 5
+    }
+]
