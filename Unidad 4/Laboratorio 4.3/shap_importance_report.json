@@ -1,0 +1,53 @@
+{
+    "latency_ms": 0.361,
+    "feature_importance": [
+        {
+            "feature": "display_name_spoofed",
+            "mean_abs_shap": 1.03705
+        },
+        {
+            "feature": "shannon_entropy",
+            "mean_abs_shap": 0.70787
+        },
+        {
+            "feature": "psychological_pressure_score",
+            "mean_abs_shap": 0.68811
+        },
+        {
+            "feature": "financial_term_count",
+            "mean_abs_shap": 0.2111
+        },
+        {
+            "feature": "urgency_term_count",
+            "mean_abs_shap": 0.08199
+        },
+        {
+            "feature": "flesch_kincaid_gl",
+            "mean_abs_shap": 0.0709
+        },
+        {
+            "feature": "dollar_sign_count",
+            "mean_abs_shap": 0.06076
+        },
+        {
+            "feature": "uppercase_ratio",
+            "mean_abs_shap": 0.05841
+        },
+        {
+            "feature": "off_hours",
+            "mean_abs_shap": 0.045
+        },
+        {
+            "feature": "avg_word_length",
+            "mean_abs_shap": 0.03295
+        },
+        {
+            "feature": "question_count",
+            "mean_abs_shap": 0.02114
+        },
+        {
+            "feature": "exclamation_count",
+            "mean_abs_shap": 0.0
+        }
+    ]
+}
