@@ -1,0 +1,146 @@
+{
+    "type": "bundle",
+    "id": "bundle--625da618-338c-4b27-90fa-7bf4ded303c9",
+    "objects": [
+        {
+            "type": "vulnerability",
+            "spec_version": "2.1",
+            "id": "vulnerability--4ca90e35-0298-433b-8494-e59356769f51",
+            "name": "CVE-2024-1709",
+            "created": "2026-11-14T21:44:41.978040Z"
+        },
+        {
+            "type": "threat-actor",
+            "spec_version": "2.1",
+            "id": "threat-actor--2666a1aa-ca2c-4227-9d7a-81197525827c",
+            "name": "Scattered Spider",
+            "created": "2026-11-14T21:44:41.978348Z",
+            "description": "Extracted from CyberSec_Research_Board post cti_post_1002"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--2dc3626a-e0cc-42b4-a340-84861be12d25",
+            "pattern": "[ipv4-addr:value = '185.220.101.5']",
+            "pattern_type": "stix",
+            "valid_from": "2026-11-14T21:44:41.978673Z",
+            "confidence": 53,
+            "created": "2026-11-14T21:44:41.978954Z"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--4e54dd26-e88e-4b56-92f9-8fbdd6c76dfd",
+            "pattern": "[domain-name:value = 'sso-portal-verify.internal-auth.net']",
+            "pattern_type": "stix",
+            "valid_from": "2026-11-14T21:44:41.979012Z",
+            "confidence": 53,
+            "created": "2026-11-14T21:44:41.979019Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--4b0f5f55-4034-454f-a148-e6f8237cb645",
+            "relationship_type": "targets",
+            "source_ref": "threat-actor--2666a1aa-ca2c-4227-9d7a-81197525827c",
+            "target_ref": "vulnerability--4ca90e35-0298-433b-8494-e59356769f51",
+            "created": "2026-11-14T21:44:41.979329Z"
+        },
+        {
+            "type": "vulnerability",
+            "spec_version": "2.1",
+            "id": "vulnerability--0f9c74f8-dffa-40c9-864c-5b3e1ba094ce",
+            "name": "CVE-2024-21762",
+            "created": "2026-11-14T21:44:41.979359Z"
+        },
+        {
+            "type": "threat-actor",
+            "spec_version": "2.1",
+            "id": "threat-actor--7c1206d9-4e9d-4448-8a14-5b4aea4780f0",
+            "name": "BlackCat",
+            "created": "2026-11-14T21:44:41.979373Z",
+            "description": "Extracted from DarkNet_ThreatIntel_Hub post cti_post_1003"
+        },
+        {
+            "type": "threat-actor",
+            "spec_version": "2.1",
+            "id": "threat-actor--508c87ad-2a77-41db-85cc-2bed8723dda0",
+            "name": "ALPHV",
+            "created": "2026-11-14T21:44:41.979397Z",
+            "description": "Extracted from DarkNet_ThreatIntel_Hub post cti_post_1003"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--3e36258a-ecef-4e28-a774-f1fc749f4de5",
+            "pattern": "[ipv4-addr:value = '45.142.212.100']",
+            "pattern_type": "stix",
+            "valid_from": "2026-11-14T21:44:41.979433Z",
+            "confidence": 51,
+            "created": "2026-11-14T21:44:41.979438Z"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--fe1d2e9a-918e-4052-8a19-33e161210db3",
+            "pattern": "[file-hash-sha256:value = 'a3c114ef72d4b971a1c970428d003b8791e8432a67711293a9203e8432b001fc']",
+            "pattern_type": "stix",
+            "valid_from": "2026-11-14T21:44:41.979467Z",
+            "confidence": 51,
+            "created": "2026-11-14T21:44:41.979471Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--ef7fbc4c-692b-4d50-ad64-b17202c4f6a7",
+            "relationship_type": "targets",
+            "source_ref": "threat-actor--508c87ad-2a77-41db-85cc-2bed8723dda0",
+            "target_ref": "vulnerability--0f9c74f8-dffa-40c9-864c-5b3e1ba094ce",
+            "created": "2026-11-14T21:44:41.979484Z"
+        },
+        {
+            "type": "vulnerability",
+            "spec_version": "2.1",
+            "id": "vulnerability--7710084a-f85a-4f73-9cd3-2e2750b144be",
+            "name": "CVE-2023-34362",
+            "created": "2026-11-14T21:44:41.979494Z"
+        },
+        {
+            "type": "threat-actor",
+            "spec_version": "2.1",
+            "id": "threat-actor--3539a526-c58b-455d-bf98-eef910be6d54",
+            "name": "TA505",
+            "created": "2026-11-14T21:44:41.979504Z",
+            "description": "Extracted from UndergroundSec_Archive post cti_post_1001"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--02651256-7773-4cfa-8f70-484c2bc97e5a",
+            "pattern": "[ipv4-addr:value = '194.165.16.44']",
+            "pattern_type": "stix",
+            "valid_from": "2026-11-14T21:44:41.979527Z",
+            "confidence": 49,
+            "created": "2026-11-14T21:44:41.979532Z"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--4ed011f5-0286-45a8-b318-4f606e9660d2",
+            "pattern": "[file-hash-sha256:value = 'd41d8cd98f00b204e9800998ecf8427e99887766554433221100aabbccddeeff']",
+            "pattern_type": "stix",
+            "valid_from": "2026-11-14T21:44:41.979553Z",
+            "confidence": 49,
+            "created": "2026-11-14T21:44:41.979557Z"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--e0268ad8-26db-45c4-a5b1-a8ac4868d2ba",
+            "relationship_type": "targets",
+            "source_ref": "threat-actor--3539a526-c58b-455d-bf98-eef910be6d54",
+            "target_ref": "vulnerability--7710084a-f85a-4f73-9cd3-2e2750b144be",
+            "created": "2026-11-14T21:44:41.979567Z"
+        }
+    ]
+}
