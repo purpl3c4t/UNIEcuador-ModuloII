@@ -1,0 +1,30 @@
+[
+    {
+        "indicator": "185.220.101.5",
+        "reason": "INSUFFICIENT_CONSENSUS (1/2 fuentes, Confianza: 0.75)",
+        "sources": [
+            "DarkWeb_Scraper_Alpha"
+        ]
+    },
+    {
+        "indicator": "1.1.1.1",
+        "reason": "CRITICAL_SELF_DOS_PREVENTED (Infraestructura legitima o binario critico)",
+        "sources": [
+            "Unverified_Paste_Feed"
+        ]
+    },
+    {
+        "indicator": "8.8.8.8",
+        "reason": "CRITICAL_SELF_DOS_PREVENTED (Infraestructura legitima o binario critico)",
+        "sources": [
+            "Unverified_Paste_Feed"
+        ]
+    },
+    {
+        "indicator": "7029517178345711e64a4b4947477b63f2334f59088730b200b848039c9f0bcf",
+        "reason": "CRITICAL_SELF_DOS_PREVENTED (Infraestructura legitima o binario critico)",
+        "sources": [
+            "Unverified_Community_Submissions"
+        ]
+    }
+]

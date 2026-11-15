@@ -1,0 +1,26 @@
+[
+    {
+        "indicator": "194.165.16.44",
+        "type": "ipv4-addr",
+        "action": "BLOCK",
+        "enforcement": "FIREWALL_AND_EDR",
+        "confidence_score": 0.85,
+        "corroborating_sources": [
+            "DarkWeb_Scraper_Alpha",
+            "ThreatIntel_Consortium_Partner"
+        ],
+        "description": "TA505 C2 infrastructure identified in underground telemetry"
+    },
+    {
+        "indicator": "a3c114ef72d4b971a1c970428d003b8791e8432a67711293a9203e8432b001fc",
+        "type": "file-hash-sha256",
+        "action": "BLOCK",
+        "enforcement": "FIREWALL_AND_EDR",
+        "confidence_score": 0.85,
+        "corroborating_sources": [
+            "DarkWeb_Scraper_Alpha",
+            "ThreatIntel_Consortium_Partner"
+        ],
+        "description": "BlackCat ALPHV malicious binary payload"
+    }
+]
