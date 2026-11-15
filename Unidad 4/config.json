@@ -1,0 +1,32 @@
+{
+    "version": "1.0.0",
+    "module": "Modulo 4: NLP en Ciberseguridad, Phishing/BEC y CTI",
+    "eventhunter_weights": {
+        "w_alpha": 1.2,
+        "w_beta": 0.8,
+        "w_timeliness": 0.35,
+        "w_relevance": 0.35,
+        "w_credibility": 0.3
+    },
+    "catboost_params": {
+        "iterations": 100,
+        "learning_rate": 0.1,
+        "depth": 5,
+        "loss_function": "Logloss",
+        "eval_metric": "F1",
+        "random_seed": 42
+    },
+    "cti_sanitizer": {
+        "min_source_consensus": 2,
+        "confidence_threshold": 0.7,
+        "whitelist_ips": [
+            "1.1.1.1",
+            "8.8.8.8",
+            "8.8.4.4",
+            "127.0.0.1"
+        ],
+        "known_benign_hashes": [
+            "7029517178345711e64a4b4947477b63f2334f59088730b200b848039c9f0bcf"
+        ]
+    }
+}
