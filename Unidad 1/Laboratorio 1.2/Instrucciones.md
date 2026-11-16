@@ -18,6 +18,9 @@ Bajo la regla estadística clásica $\mu + 3\sigma$, la media se desplaza y la d
 
 ## Guía Paso a Paso de Ejecución 
 
+### **ENTREGABLE TAREA**: 
+Esta red produce datos sumamente contaminados donde el umbral robusto (Mediana/MAD) colapsa drásticamente, bypasseando para ambos (clásico y robusto). ¿qué parámetro hace que el atacante pueda burlar totalmente la seguridad mediante MAD? Modifícalo para decrecer el ruido introducido a la red e incluye en tu archivo MD la linea de código.
+
 ### Paso 2.1: Simulación del Ataque de Inyección Gradual (Boiling Frog)
 Se someterá la telemetría del Laboratorio 1 a cuatro semanas simuladas de reentrenamiento, agregando una tasa de contaminación incremental de tráfico atípico (del 2% al 15% semanal).# lab2_baseline_poisoning.py
 
