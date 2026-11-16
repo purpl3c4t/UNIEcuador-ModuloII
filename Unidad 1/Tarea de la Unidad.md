@@ -1,6 +1,6 @@
 ## Pipeline Unificado de Detección Conductual y Mitigación Automatizada
 
-* **Modalidad:** Tarea autónoma / Proyecto de aplicación práctica (individual o en parejas).
+* **Modalidad:** Tarea autónoma / Proyecto de aplicación práctica (individual).
 * **Entrega:** Repositorio de código o script ejecutable documentado con reporte técnico en formato Markdown.
 
 ### 1\. Descripción del Escenario Integral
