@@ -17,9 +17,9 @@ pip install torch numpy pandas scikit-learn networkx joblib
 
 ---
 
-## ⏱️ Secuencia de Ejecución de los Laboratorios (2 Horas)
+## ⏱️ Secuencia de Ejecución de los Laboratorios 
 
-### Laboratorio 1: LOLBins y Deep Autoencoders (30 min)
+### Laboratorio 1: LOLBins y Deep Autoencoders
 * **Objetivo:** Comprender el colapso de contexto y entrenar un autoencoder no supervisado para detectar anomalías mediante el Error Cuadrático Medio (MSE).
 * **Ejecución:**
   ```bash
@@ -28,7 +28,7 @@ pip install torch numpy pandas scikit-learn networkx joblib
   python3 train_autoencoder.py
   ```
 
-### Laboratorio 2: Baseline Poisoning y Z-Score Robusto (30 min)
+### Laboratorio 2: Baseline Poisoning y Z-Score Robusto 
 * **Objetivo:** Simular el ataque del sapo hervido para inflar la varianza clásica e implementar el estimador robusto basado en Mediana y MAD.
 * **Ejecución:**
   ```bash
@@ -37,7 +37,7 @@ pip install torch numpy pandas scikit-learn networkx joblib
   python3 evaluate_poisoning.py
   ```
 
-### Laboratorio 3: Zero-Packet Recon y Grafos Temporales (30 min)
+### Laboratorio 3: Zero-Packet Recon y Grafos Temporales 
 * **Objetivo:** Modelar rutas de escalamiento de privilegios y evaluar técnicas de reconocimiento pasivo en memoria local con grafos dirigidos.
 * **Ejecución:**
   ```bash
@@ -46,7 +46,7 @@ pip install torch numpy pandas scikit-learn networkx joblib
   python3 analyze_lateral_movement.py
   ```
 
-### Laboratorio 4: Insider Threat y Puntuación Compuesta (30 min)
+### Laboratorio 4: Insider Threat y Puntuación Compuesta
 * **Objetivo:** Evaluar eventos forenses de cuentas autorizadas, detectar empaquetado (*staging*) y calcular el riesgo compuesto para revocar sesiones.
 * **Ejecución:**
   ```bash
