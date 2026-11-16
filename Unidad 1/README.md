@@ -56,9 +56,10 @@ pip install torch numpy pandas scikit-learn networkx joblib
 
 ---
 
-## 🏆 Proyecto Integrador Autónomo
+## Proyecto Integrador (tarea del módulo)
 
-El estudiante debe ejecutar y analizar el script unificado:
+Ejecutar y analizar el script unificado:
+
 ```bash
 cd ../proyecto_integrador
 python3 generate_enterprise_data.py
