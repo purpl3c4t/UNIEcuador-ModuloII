@@ -18,7 +18,9 @@ Al forzar la compresión en un espacio latente de baja dimensión, la red neuron
 
 a)  Cada carpeta contiene su propio script de generación de datos (`generate_*.py`), el script analítico principal y un `README.md` con las preguntas de control.
 b)  La salida de cada laboratorio sirve como base conceptual y matemática para el siguiente.
-c)  **Una vez entendido cómo funciona el entrenamiento del encoder, modifícalo para reducir la presencia de falsos positivos**
+
+### **ENTREGABLE TAREA:**
+Una vez entendido cómo funciona el entrenamiento del encoder, modifícalo para reducir la presencia de falsos positivos en la matriz de confusión e incluye en tu archivo MD, la línea de código específica para este cambio.
 
 ### Paso 1.1: Generación de Telemetría Sintética y Colapso de Contexto
 Configurar un script en Python para generar 10,000 eventos de actividad legítima de administradores de sistemas (consultas habituales, horarios diurnos, rutas estándar) y 100 eventos de ataque evasivo que abusan de certutil.exe para descargar un payload en Base64 depositado en %TEMP%. **Script:** `lab1_telemetry_generator.py*`
