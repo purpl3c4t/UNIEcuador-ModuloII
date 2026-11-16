@@ -16,6 +16,9 @@ Para detectar esta secuencia sin abrumar al SOC con falsos positivos, el motor a
 
 ## Guía Paso a Paso de Ejecución
 
+<img width="624" height="51" alt="image" src="https://github.com/user-attachments/assets/7570f063-b5bf-4bdd-ac1a-6cfeacced9eb" />
+
+
 ### Paso 4.1: Modelado de Eventos Forenses de Insider Threat
 El estudiante procesa un registro de eventos simulados de Windows (IDs 4624, 4672, 4663 y 4688) correspondientes a una empleada que ha presentado su carta de renuncia y recolecta archivos en %TEMP%:  `lab4_insider_simulation.py`
 
