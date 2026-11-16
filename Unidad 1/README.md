@@ -1,6 +1,6 @@
 # Suite de Laboratorios Prácticos: Detección Basada en Comportamiento (UEBA) y Ciberdefensa Adversarial
 
-Bienvenido al repositorio oficial de materiales prácticos para la suite de laboratorios de UEBA y analítica de seguridad. Este paquete contiene el código ejecutable, datasets sintéticos y guías paso a paso para desarrollar 4 laboratorios prácticos acumulativos (30 minutos cada uno, 2 horas en total) y un Proyecto Integrador autónomo.
+Bienvenido al repositorio oficial de materiales prácticos para la suite de laboratorios de la primera unidad. Este repositorio contiene el código ejecutable, datasets sintéticos y guías paso a paso para desarrollar 4 laboratorios prácticos acumulativos (Con duración total estimada de 2 horas) y un Proyecto Integrador autónomo, este proyecto integrador se entrega como tarea el próximo fin de semana.
 
 ---
 
