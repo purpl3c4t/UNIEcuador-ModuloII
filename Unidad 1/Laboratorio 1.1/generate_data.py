@@ -35,12 +35,13 @@ def generate_telemetry():
         'label': 1,
         'process_name': 'certutil.exe'
     })
-    
-    df_benign.to_csv('/workspace/scratch/laboratorios_ueba/lab1_lotl_autoencoder/data/telemetry_baseline.csv', index=False)
+
+    #Cámbialo por tu ruta
+    df_benign.to_csv('~/data/telemetry_baseline.csv', index=False)
     
     # Dataset de prueba combinado (500 benignos + 150 ataques)
     test_combined = pd.concat([df_benign.sample(500, random_state=42), df_attack]).sample(frac=1.0, random_state=42)
-    test_combined.to_csv('/workspace/scratch/laboratorios_ueba/lab1_lotl_autoencoder/data/telemetry_test.csv', index=False)
+    test_combined.to_csv('~/data/telemetry_test.csv', index=False)
     print("Lab 1: Datasets generados con éxito.")
 
 if __name__ == '__main__':
