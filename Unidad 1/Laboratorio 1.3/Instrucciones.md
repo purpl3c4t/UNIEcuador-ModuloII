@@ -19,10 +19,14 @@ Esta recolección pasiva tiene huella cero en la red.Para neutralizar este recon
 ## Guía Paso a Paso de Ejecución 
 
 ### Paso 3.1: Construcción del Grafo de Identidades con NetworkX
-El estudiante modela una infraestructura corporativa con tres áreas (Contabilidad, Desarrollo y Controladores de Dominio) y simula el avance de un intruso que ha obtenido credenciales locales y busca alcanzar el servidor de base de datos financiero: `lab3_graph_lateral_movement.py`
+Modelar una infraestructura corporativa con tres áreas (Contabilidad, Desarrollo y Controladores de Dominio) y simula el avance de un intruso que ha obtenido credenciales locales y busca alcanzar el servidor de base de datos financiero: `lab3_graph_lateral_movement.py`
+
+<img width="753" height="454" alt="image" src="https://github.com/user-attachments/assets/79c439a6-6704-43e2-b3b1-ddc5a727804a" />
 
 ### Paso 3.2: Detección Predictiva de Anomalía de Abanico (Connection Fan-Out)
-El estudiante analiza el grado de centralidad de salida (Out-Degree Centrality) de Host_Workstation_04 para verificar el momento exacto en que la estación intenta saltar a recursos fuera de su perfil de pares.
+Analizar el grado de centralidad de salida (Out-Degree Centrality) de Host_Workstation_04 para verificar el momento exacto en que la estación intenta saltar a recursos fuera de su perfil de pares.
+
+<img width="748" height="798" alt="image" src="https://github.com/user-attachments/assets/02503e1d-de19-4341-ac26-00d7cb8a5ef3" />
 
 ## Preguntas de Control y Validación
 * ¿Por qué el reconocimiento de la caché ARP local no puede ser interceptado por un sensor Network Detection and Response (NDR) perimetral?
