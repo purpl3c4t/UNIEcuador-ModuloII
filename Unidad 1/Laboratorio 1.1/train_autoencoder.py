@@ -69,7 +69,7 @@ def train_and_evaluate():
     with torch.no_grad():
         recon_train = model(X_train_tensor)
         train_mse = torch.mean((X_train_tensor - recon_train) ** 2, dim=1).numpy()
-        threshold_p99 = np.percentile(train_mse, 99.0)
+        threshold_p99 = np.percentile(train_mse, 95.0)
         
     print(f"\n[+] Umbral Estadístico de Reconstrucción (Percentil 99): {threshold_p99:.4f}")
     
