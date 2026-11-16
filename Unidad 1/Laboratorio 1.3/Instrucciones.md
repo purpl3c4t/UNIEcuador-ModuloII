@@ -14,9 +14,13 @@ Grafo de relaciones de identidad construido (identity_graph.gml) y la matriz de 
 ## Marco Teórico y Planteamiento del Escenario
 Los atacantes experimentados no ejecutan barridos ruidosos con Nmap ni consultas LDAP masivas hacia el controlador de dominio. En su lugar, aplican Zero-Packet Reconnaissance: interrogan la memoria local, la caché ARP (arp -a), las tablas de enrutamiento (route print) y las conexiones TCP establecidas (netstat -aon). 
 
-Esta recolección pasiva tiene huella cero en la red.Para neutralizar este reconocimiento invisible y el posterior salto lateral (Pass-the-Hash / WinRM), la defensa utiliza Redes de Grafos de Identidades. En un grafo $G=(V, E)$, los nodos $V$ representan cuentas y equipos, y las aristas $E$ representan autenticaciones ponderadas por el algoritmo de Dijkstra: `$$\text{Distancia del Camino} = \sum_{e \in \text{ruta}} -\log(P(e))$$ Donde $P(e)$` es la probabilidad de transición aprendida para el grupo de pares. Un usuario estándar que súbitamente reduce su distancia topológica hacia una cuenta privilegiada activa una alarma predictiva.
+Esta recolección pasiva tiene huella cero en la red. Para neutralizar este reconocimiento invisible y el posterior salto lateral (Pass-the-Hash / WinRM), la defensa utiliza Redes de Grafos de Identidades. En un grafo $G=(V, E)$, los nodos $V$ representan cuentas y equipos, y las aristas $E$ representan autenticaciones ponderadas por el algoritmo de Dijkstra: `$$\text{Distancia del Camino} = \sum_{e \in \text{ruta}} -\log(P(e))$$ Donde $P(e)$` es la probabilidad de transición aprendida para el grupo de pares. Un usuario estándar que súbitamente reduce su distancia topológica hacia una cuenta privilegiada activa una alarma predictiva.
 
 ## Guía Paso a Paso de Ejecución 
+
+### **ENTREGABLE TAREA:**
+¿Qué cambio debería haber en la topología `create_topology.py` para que el ingreso produzca el menor peso de ruta o dicho en otras palabras, qué cambio debería hacer el atacante desde el equipo de finanzas para que el login le permita llegar hasta la base de datos? Incluye la línea de código que modificaste en el archivo .MD para envío de la tarea.
+
 
 ### Paso 3.1: Construcción del Grafo de Identidades con NetworkX
 Modelar una infraestructura corporativa con tres áreas (Contabilidad, Desarrollo y Controladores de Dominio) y simula el avance de un intruso que ha obtenido credenciales locales y busca alcanzar el servidor de base de datos financiero: `lab3_graph_lateral_movement.py`
