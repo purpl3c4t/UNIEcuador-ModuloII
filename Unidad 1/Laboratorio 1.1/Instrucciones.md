@@ -6,7 +6,7 @@ Demostrar el fenómeno del "colapso de contexto" mediante utilidades nativas fir
 Abuso de utilidades nativas (*LOLBins* como `certutil.exe`), demostración del colapso de contexto y entrenamiento de un *Deep Autoencoder Subcompleto* en PyTorch para establecer la línea base y el umbral de anomalía basado en el Error Cuadrático Medio (MSE). Genera el conjunto de telemetría y el modelo baseline requerido para la siguiente práctica.
 
 ## Entregable Requerido para Lab 2: 
-El conjunto de datos de telemetría benigna normalizada (baseline_telemetry.csv) y los pesos del modelo autoencoder entrenado (autoencoder_baseline.pt). 
+El conjunto de datos de telemetría benigna normalizada (`baseline_telemetry.csv`) y los pesos del modelo autoencoder entrenado (`autoencoder_baseline.pt`). 
 
 ## Marco Teórico y Planteamiento del Escenario
 
