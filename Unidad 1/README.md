@@ -4,43 +4,6 @@ Bienvenido al repositorio oficial de materiales prácticos para la suite de labo
 
 ---
 
-## 📁 Estructura del Paquete
-
-```text
-laboratorios_ueba/
-│
-├── lab1_lotl_autoencoder/
-│   ├── generate_data.py          # Generador de telemetría de comandos y entropía
-│   ├── train_autoencoder.py      # Entrenamiento del Deep Autoencoder en PyTorch
-│   ├── data/                     # Datasets de entrenamiento y evaluación
-│   └── README.md                 # Guía paso a paso del Laboratorio 1
-│
-├── lab2_baseline_poisoning/
-│   ├── generate_poison_data.py   # Simulación de inyección de ruido (Sapo Hervido)
-│   ├── evaluate_poisoning.py     # Comparativa matemática Media/Std vs Mediana/MAD
-│   ├── data/                     # Datos de tráfico y análisis de deformación
-│   └── README.md                 # Guía paso a paso del Laboratorio 2
-│
-├── lab3_zeropacket_graphs/
-│   ├── create_topology.py        # Modelado topológico y pesos de grafo de identidad
-│   ├── analyze_lateral_movement.py # Detección de caminos críticos y Zero-Packet Recon
-│   ├── data/                     # Grafo en formato GML y matriz de transiciones
-│   └── README.md                 # Guía paso a paso del Laboratorio 3
-│
-├── lab4_insider_threat/
-│   ├── composite_risk_engine.py  # Motor de riesgo compuesto y simulación de revocación
-│   ├── data/                     # Registros de eventos forenses (4624, 4663, 4688)
-│   └── README.md                 # Guía paso a paso del Laboratorio 4
-│
-├── proyecto_integrador/
-│   ├── generate_enterprise_data.py # Dataset integrado de 1,000 eventos corporativos
-│   ├── unified_soc_pipeline.py     # Pipeline unificado de detección y mitigación
-│   ├── data/                       # Dataset empresarial y resultados de evaluación
-│   └── README.md                   # Especificaciones y rúbrica del proyecto integrador
-│
-└── README.md                     # Manual general de instalación y ejecución
-```
-
 ---
 
 ## 🚀 Requisitos y Configuración del Entorno
