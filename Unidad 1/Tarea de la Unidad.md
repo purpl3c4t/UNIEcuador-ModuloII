@@ -47,4 +47,4 @@ La tarea se trata de integrar los cuatro módulos construidos en un **Pipeline d
 2. **Reporte Técnico de Arquitectura (** **informe\_analitico.md** **):**
   * Justificación de por qué el pipeline resistió el envenenamiento de datos del atacante en comparación con un SIEM de reglas clásicas.
   * Matriz de confusión final (Verdaderos Positivos, Falsos Positivos, Verdaderos Negativos y Falsos Negativos).
-  * Plan de respuesta a incidentes detallando las llamadas API ejecutadas para aislar la identidad comprometida.
+  * Plan de respuesta a incidentes detallando las acciones ejecutadas para aislar la identidad comprometida.
