@@ -19,8 +19,10 @@ Para detectar esta secuencia sin abrumar al SOC con falsos positivos, el motor a
 ### Paso 4.1: Modelado de Eventos Forenses de Insider Threat
 El estudiante procesa un registro de eventos simulados de Windows (IDs 4624, 4672, 4663 y 4688) correspondientes a una empleada que ha presentado su carta de renuncia y recolecta archivos en %TEMP%:  `lab4_insider_simulation.py`
 
+<img width="769" height="1018" alt="image" src="https://github.com/user-attachments/assets/ac5cb051-bf7d-4c18-8277-0866261636e3" />
+
 ### Paso 4.2: Orquestación de la Respuesta Automatizada
-El estudiante escribe una función simulada de webhook que interactúa con la API de identidad (Microsoft Entra ID / Okta) para invalidar el token de actualización (refresh token) y aislar el host en la red mediante políticas de cuarentena.
+Escribir una función simulada de webhook que interactúa con la API de identidad (Microsoft Entra ID / Okta) para invalidar el token de actualización (refresh token) y aislar el host en la red mediante políticas de cuarentena.
 
 ## Preguntas de Control y Validación
 * ¿Por qué es fundamental que la recolección previa (Data Staging) en carpetas locales temporales como %TEMP% aumente drásticamente el score de riesgo antes de que se inicie la transferencia de red?
