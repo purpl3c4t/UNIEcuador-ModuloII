@@ -19,10 +19,15 @@ Bajo la regla estadística clásica $\mu + 3\sigma$, la media se desplaza y la d
 ## Guía Paso a Paso de Ejecución 
 
 ### Paso 2.1: Simulación del Ataque de Inyección Gradual (Boiling Frog)
-El estudiante someterá la telemetría del Laboratorio 1 a cuatro semanas simuladas de reentrenamiento, agregando una tasa de contaminación incremental de tráfico atípico (del 2% al 15% semanal).# lab2_baseline_poisoning.py
+Se someterá la telemetría del Laboratorio 1 a cuatro semanas simuladas de reentrenamiento, agregando una tasa de contaminación incremental de tráfico atípico (del 2% al 15% semanal).# lab2_baseline_poisoning.py
+
+<img width="763" height="463" alt="image" src="https://github.com/user-attachments/assets/6714e415-950f-49fe-96a3-d62b7863ed29" />
 
 ### Paso 2.2: Construcción del Detector Robusto para el Pipeline
-El estudiante encapsula la lógica matemática en un módulo reusable que exporta la función evaluate_sample(x) utilizando el Z-score normalizado de MAD, descartando cualquier influencia de la media clásica.
+Encapsular la lógica matemática en un módulo reusable que exporta la función evaluate_sample(x) utilizando el Z-score normalizado de MAD, descartando cualquier influencia de la media clásica.
+
+<img width="772" height="694" alt="image" src="https://github.com/user-attachments/assets/26e70aaf-f81e-4a0a-856f-1b4d6882b570" />
+
 
 ## Preguntas de Control y Validación 
 * En la Semana 4, ¿cuál fue el porcentaje exacto de inflación del umbral clásico frente a la variación contenida del umbral robusto?
