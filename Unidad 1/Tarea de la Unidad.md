@@ -14,7 +14,7 @@ Una organización del sector financiero ha migrado su infraestructura crítica a
 
 ### 2\. Especificación Técnica de los Requerimientos del Proyecto
 
-El estudiante debe integrar los cuatro módulos construidos en un **Pipeline de Monitoreo Continuo** (`unified_soc_pipeline.py`) que cumpla con los siguientes requisitos:
+La tarea se trata de integrar los cuatro módulos construidos en un **Pipeline de Monitoreo Continuo** (`unified_soc_pipeline.py`) que cumpla con los siguientes requisitos:
 
 ```
 +-------------------------------------------------------------------------+
