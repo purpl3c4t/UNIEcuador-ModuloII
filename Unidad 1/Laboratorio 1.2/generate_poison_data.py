@@ -14,8 +14,8 @@ def generate_poisoning_streams():
         # Tráfico benigno diario
         benign_pps = np.random.normal(loc=100.0, scale=12.0, size=samples_per_day).clip(60, 140)
         
-        # Inyección de chaff (Sapo Hervido): Semana 1 (0%), Semana 2 (4%), Semana 3 (10%), Semana 4 (18%)
-        rates = {1: 0.0, 2: 0.04, 3: 0.10, 4: 0.18}
+        # Inyección de chaff (ruido ): 
+        rates = {1: 0.0, 2: 0.04, 3: 0.10, 4: 0.55}
         chaff_rate = rates[week]
         n_chaff = int(samples_per_day * chaff_rate)
         
