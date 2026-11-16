@@ -22,11 +22,17 @@ B)  La salida de cada laboratorio sirve como base conceptual y matemática para 
 ### Paso 1.1: Generación de Telemetría Sintética y Colapso de Contexto
 Configurar un script en Python para generar 10,000 eventos de actividad legítima de administradores de sistemas (consultas habituales, horarios diurnos, rutas estándar) y 100 eventos de ataque evasivo que abusan de certutil.exe para descargar un payload en Base64 depositado en %TEMP%. **Script:** `lab1_telemetry_generator.py*`
 
+<img width="748" height="493" alt="image" src="https://github.com/user-attachments/assets/988723a6-8192-4662-84ce-aa6c25bed88f" />
+
 ### Paso 1.2: Entrenamiento del Autoencoder en PyTorch
 Implementar y entrena la red neuronal utilizando únicamente el subconjunto benigno:# lab1_autoencoder.py
 
+<img width="751" height="594" alt="image" src="https://github.com/user-attachments/assets/4c389a3f-1db1-47aa-99f9-f1d2f0c1471e" />
+
 ### Paso 1.3: Evaluación del Umbral de Anomalía
 Calcular el error de reconstrucción sobre el tráfico normal para fijar el umbral analítico al percentil 99 ($P_{99}$), y evalúa las muestras de ataque evasivo.
+
+<img width="759" height="426" alt="image" src="https://github.com/user-attachments/assets/b6f16649-e400-4edc-b533-116ae1768a1b" />
 
 ## Preguntas de Control y Validación 
 ---
