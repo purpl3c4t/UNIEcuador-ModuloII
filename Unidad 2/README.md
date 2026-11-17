@@ -5,28 +5,6 @@ Bienvenido al repositorio oficial de materiales prácticos para la suite de labo
 ---
 ## 📁 Estructura del Paquete
 
-```text
-recursos/
-│
-├── README.md                          # Guía técnica general y secuencia de ejecución
-│
-├── lab1_dynamic_api/
-│   ├── stage1_loader.c                # Loader en C x64 con lectura de PEB y resolución ROR13
-│   └── audit_iat_hashing.py           # Verificador de hashes ROR13 y generador de PE con IAT limpia
-│
-├── lab2_static_evasion/
-│   └── malconv_adversarial.py         # Arquitectura MalConv (PyTorch), Integrated Gradients y ataque DOS Header
-│
-├── lab3_guardrails/
-│   └── guardrails_sandbox.py          # Implementación de Guardrails (CPUID/RDTSC) y simulación VMI transparente
-│
-├── lab4_detection_drift/
-│   └── concept_drift_padl.py          # Evaluación temporal TESSERACT, Predicción Conformal (Transcend) y PADL (120s)
-│
-└── proyecto_final/
-    └── ai_cyber_arms_race.py          # Simulación Red Team (Ransomware 3.0 / LLM) vs Blue Team (PADL / Conformal)
-```
-
 ---
 ## 🚀 Requisitos y Configuración del Entorno
 
