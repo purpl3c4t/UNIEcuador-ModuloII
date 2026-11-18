@@ -55,7 +55,7 @@ Al completar este proyecto integrador se podrá
 
 ## Instrucciones de Ejecución
 
-El proyecto puede ser ejecutado directamente mediante el script unificado `ai_cyber_arms_race.py`:
+El proyecto DEBE ser ejecutado directamente mediante el script unificado `ai_cyber_arms_race.py` con los siguientes argumentos:
 
 ```bash
 cd proyecto_final
@@ -72,9 +72,53 @@ python3 ai_cyber_arms_race.py --rounds 3 --telemetry ../lab3_guardrails/telemetr
 ## ENTREGABLE
 ---
 
-## 📝 Estructura del Reporte Técnico a Entregar por el Estudiante
+###Salida Esperada en Consola
 
-El estudiante debe redactar un informe técnico (de 3 a 5 páginas) respondiendo a los siguientes tres ejes fundamentales basados en el archivo `proyecto_integrador_report.json`:
+```text
+========================================================================================
+ PROYECTO FINAL INTEGRADOR: THE AI CYBER ARMS RACE
+ Simulación en Ciclo Cerrado: Red Team (Ransomware 3.0) vs. Blue Team (Pipeline Defensivo)
+========================================================================================
+
+########################################################################################
+ >>> [RONDA 1/3] CAMPAÑA ADVERSARIA EN CURSO (Algoritmo Criptográfico: SPECK-128)
+########################################################################################
+[*] [RED TEAM] Desplegando artefacto ofensivo multietapa:
+    -> Loader PE         : loader_r1.exe (SHA-256: 846031cec8020400...)
+    -> Ofuscación IAT    : Dynamic API Resolution (PEB + ROR13) [IAT Size: 0]
+    -> Perturbación DOS  : 58 bytes libres modificados (Preserva 'MZ' y e_lfanew en 0x80)
+    -> Guardrails        : CPUID (0x40000000), Hardware Check (<=2 vCPUs), Timing (RDTSC)
+    -> Payload IA        : Micro-script en memoria generado dinámicamente (SPECK-128)
+
+[*] [BLUE TEAM] Activando Pipeline Defensivo en Capas:
+    [1/5] Capa 1: ApexGuard Heuristic AV      -> Veredicto: CLEAN / ALLOWED           | Bypass: True
+    [2/5] Capa 2: MalConv Deep Learning Classifier -> Prob: 0.2752 | Veredicto: BENIGN (Falso Negativo)
+    [3/5] Capa 3: Transcend Conformal Reject Filter -> p-value: 0.0111 | Acción: QUARANTINE_OOD
+          [✓] FILTRO TRANSCEND ACTIVADO: Muestra catalogada como Out-of-Distribution (OOD).
+              Enviada a cuarentena preventiva evitando falso negativo.
+    [4/5] Capa 4: Sandbox Dinámico            -> Veredicto: MONITOREO TRANSPARENTE (Guardrails neutralizados por hardware EPT)
+    [5/5] Capa 5: Motor de Políticas Tempranas PADL (120s) -> Score: 0.8909 (Umbral: 0.7)
+          [✓] CONTENCIÓN EN TIEMPO REAL: Regla PADL-08 disparada a los T+70s.
+              Aislamiento de proceso efectuado antes de que comience el cifrado quirúrgico.
+
+========================================================================================
+ RESUMEN TÉCNICO Y EVALUACIÓN DEL PROYECTO INTEGRADOR
+========================================================================================
+ [*] Total de Rondas Simuladas                  : 3
+ [*] Tasa de Bypass de Capas Estáticas (AV/IA)   : 100.0% (Esperado por diseño ofensivo)
+ [*] Tasa de Aislamiento Conformal (Transcend)  : 100.0% (Contención Zero-Day)
+ [*] Tasa de Contención Temprana PADL (120s)     : 100.0% (Contención en memoria)
+ [✓] EFECTIVIDAD FINAL DE DEFENSA EN PROFUNDIDAD : 100.0% DE AMENAZAS NEUTRALIZADAS
+
+[+] Dossier de evidencia exportado exitosamente: 'proyecto_integrador_report.json'
+========================================================================================
+```
+
+---
+
+### Verificación
+
+Analizar que los siguientes puntos se respondan en los ejes fundamentales solicitados en el archivo `proyecto_integrador_report.json`:
 
 ### 1. Dossier de Evasión Multietapa (Perspectiva Red Team)
 * Justifique por qué la combinación de **Dynamic API Resolution** (Lab 1) y la **Perturbación del DOS Header** (Lab 2) logró un 100% de bypass en las Capas 1 y 2.
