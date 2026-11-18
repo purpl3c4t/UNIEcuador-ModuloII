@@ -29,10 +29,10 @@ Posteriormente, analizar el ataque adversario que manipula únicamente los 58 by
 
 1. Navega al directorio del laboratorio dentro de este folder de Github
    
-3. Ejecuta el script tomando como entrada el binario del Laboratorio 1:
+3. Ejecuta el script tomando como entrada el binario del Laboratorio 1 _(puedes cambiar el segundo argumento por el nombre de salida que tú desees)_:
 
-```
-python3 malconv_adversarial.py ../lab1_dynamic_api/stage1_loader.exe stage2_evasive.exe
+```python
+python3 malconv_adversarial.py stage1_loader.exe stage2_evasive.exe 
 ```
 
 ### **Verificación:**
