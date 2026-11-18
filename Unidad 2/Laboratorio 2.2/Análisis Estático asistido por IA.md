@@ -21,12 +21,9 @@ _El ejecutable stage2_evasive.exe, capaz de evadir el análisis estático de mod
 
 ### Fundamento Técnico y Objetivo
 
-El objetivo es auditar la arquitectura convolucional profunda **MalConv** utilizando **Integrated Gradients**. 
-Se debe descubrir que el modelo concentra su atención en las cabeceras PE y no en el código de la sección `.text`. 
+El objetivo es auditar la arquitectura convolucional profunda **MalConv** utilizando **Integrated Gradients**. Se debe descubrir que el modelo concentra su atención en las cabeceras PE y no en el código de la sección `.text`. 
 
-Posteriormente, aplicar un ataque adversario que manipula únicamente los 58 bytes libres del *DOS Header* (Offsets `0x02` a `0x3B`), preservando el número mágico `MZ` y el puntero `e_lfanew` para evadir la detección sin romper la funcionalidad.
-El script en `recursos/lab2_static_evasion/ `malconv_adversarial.py` `
-
+Posteriormente, analizar el ataque adversario que manipula únicamente los 58 bytes libres del *DOS Header* (Offsets `0x02` a `0x3B`), preservando el número mágico `MZ` y el puntero `e_lfanew` para evadir la detección sin romper la funcionalidad. (esto lo  haces comparando stage1_loader del laboratorio 2.1 con stage2_evasive de este laboratorio).
 
 ### Paso a Paso de Ejecución
 
@@ -36,8 +33,10 @@ El script en `recursos/lab2_static_evasion/ `malconv_adversarial.py` `
 
 ```
 python3 malconv_adversarial.py ../lab1_dynamic_api/stage1_loader.exe stage2_evasive.exe
-
 ```
 
-3. **Verificación:**
+### **Verificación:**
 * Observa cómo el mapa de relevancia confirma el sesgo de MalConv sobre los primeros 64 bytes y cómo se reduce la probabilidad de detección sin alterar la estructura válida del archivo PE.
+
+## ENTREGA
+El archivo stage2_evasive.exe, que será utilizado en la práctica siguiente.
