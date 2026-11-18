@@ -1,7 +1,7 @@
 # Laboratorio 4: Detección Adaptativa Temprana y Clasificación ante Concept Drift (30 min)
 * **Prerrequisito:** El registro de telemetría de eventos generado en el Laboratorio 3 y un dataset longitudinal de variantes sintéticas de malware.
 
-## 🎯 Objetivo de la Práctica 
+## Objetivo de la Práctica 
 1. **Componente Ofensivo:** Comprender y experimentar con la **Generación Automática de Payloads Asistida por IA** (*Polimorfismo Generativo*, ataques *Living Off the LLM*, *BlackMamba* y *Ransomware 3.0*), sintetizando variantes polimórficas en memoria con mutación continua de hashes y sintaxis.
 2. **Componente Defensivo:**
    * Diagnosticar el fenómeno de **Concept Drift** (Deriva Virtual y Real) y medir el envejecimiento del clasificador bajo el protocolo cronológico **TESSERACT**.
@@ -10,10 +10,10 @@
 
 ---
 
-## 🛠️ Paso a Paso Técnico para el Estudiante
+## Paso a Paso Técnico 
 
 ### Paso 1: Generación y Experimentación de Payloads Asistidos por IA
-El estudiante puede ejecutar el generador en **modo interactivo** o mediante **argumentos de terminal** para experimentar con la mutación polimórfica:
+Ejecutar el generador en **modo interactivo** o mediante **argumentos de terminal** para experimentar con la mutación polimórfica:
 
 #### Opción A: Modo Interactivo
 ```bash
@@ -40,12 +40,13 @@ python3 payload_generator_ai.py --type ransomware_speck --iterations 3 --mutatio
 [+] Finalizado. Variantes guardadas en 'generated_payloads/' (generated_payloads/payload_metadata.json)
 ```
 
-*Análisis* Observar cómo cada iteración produce un hash SHA-256 completamente distinto, nombres de variables mutados y algoritmos criptográficos rotativos, haciendo inservibles las firmas estáticas tradicionales.
+*Análisis* 
+Observar cómo cada iteración produce un hash SHA-256 completamente distinto, nombres de variables mutados y algoritmos criptográficos rotativos, haciendo inservibles las firmas estáticas tradicionales.
 
 ---
 
 ### Paso 2: Evaluación Defensiva con Telemetría de Lab 3 (TESSERACT, Transcend y PADL)
-Ejecute el motor de evaluación consumiendo el archivo de telemetría de 120 segundos generado en el **Laboratorio 3** (`../lab3_guardrails/telemetry_120s.json`) y vinculando los payloads recién generados:
+Ejecutar el motor de evaluación consumiendo el archivo de telemetría de 120 segundos generado en el **Laboratorio 3** (`../lab3_guardrails/telemetry_120s.json`) y vinculando los payloads recién generados:
 
 ```bash
 python3 concept_drift_padl.py ../lab3_guardrails/telemetry_120s.json --eval-payload generated_payloads/payload_metadata.json
