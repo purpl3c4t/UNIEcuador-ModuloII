@@ -3,7 +3,7 @@
 Bienvenido al repositorio de materiales prácticos para la suite de laboratorios de la **Unidad 2: Análisis de Malware (Estático/dinámico)**. Este paquete contiene el código ejecutable en Python y C, scripts de auditoría, implementaciones de modelos en PyTorch/Scikit-learn, generadores de telemetría y guías técnicas para desarrollar 4 laboratorios prácticos acumulativos (30 minutos cada uno, 2 horas en total) y un Proyecto Integrador autónomo.
 
 ---
-## 🚀 Requisitos y Configuración del Entorno
+## Requisitos y Configuración del Entorno
 
 Los scripts están desarrollados en Python 3.10+ y C (MinGW-w64 / MSVC para compilación nativa en Windows) utilizando bibliotecas estándares de ciencia de datos, aprendizaje profundo y ciberseguridad.
 
@@ -18,7 +18,7 @@ sudo apt-get install gcc-mingw-w64-x86-64
 ```
 
 ---
-## ⏱️ Secuencia de Ejecución de los Laboratorios (2 Horas)
+## Secuencia de Ejecución de los Laboratorios (2 Horas)
 
 Los 4 ejercicios están encadenados de forma acumulativa: cada laboratorio consume el artefacto binario o la telemetría generada en la práctica inmediatamente anterior.
 
@@ -88,7 +88,7 @@ Los 4 ejercicios están encadenados de forma acumulativa: cada laboratorio consu
 
 ---
 
-## 🏆 Proyecto Integrador Autónomo: The AI Cyber Arms Race
+## Proyecto Integrador Autónomo: The AI Cyber Arms Race
 
 El estudiante asume un rol dual (Red Team / Blue Team) para simular y contener en ciclo cerrado una campaña inspirada en el paradigma de **Ransomware 3.0** y **Polimorfismo Generativo** (como *BlackMamba*, *PromptLock* o ataques *Living Off the LLM*):
 
