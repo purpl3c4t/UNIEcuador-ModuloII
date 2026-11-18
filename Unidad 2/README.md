@@ -3,9 +3,6 @@
 Bienvenido al repositorio oficial de materiales prácticos para la suite de laboratorios de la **Unidad 2: Ciclo de Vida del Malware, Evasión de EDR y Ciberdefensa Asistida por Inteligencia Artificial**. Este paquete contiene el código ejecutable en Python y C, scripts de auditoría, implementaciones de modelos en PyTorch/Scikit-learn, generadores de telemetría y guías técnicas para desarrollar 4 laboratorios prácticos acumulativos (30 minutos cada uno, 2 horas en total) y un Proyecto Integrador autónomo en ciclo cerrado.
 
 ---
-## 📁 Estructura del Paquete
-
----
 ## 🚀 Requisitos y Configuración del Entorno
 
 Los scripts están desarrollados en Python 3.10+ y C (MinGW-w64 / MSVC para compilación nativa en Windows) utilizando bibliotecas estándares de ciencia de datos, aprendizaje profundo y ciberseguridad.
