@@ -25,7 +25,7 @@ cd cloud_ai_labs/recursos
 pip install flask requests
 ```
 
-* *Recurso Lab 1:* Emulador de Cómputo Vulnerable y Servicio IMDS (`imds_vulnerable_service.py`), este script en Flask emula de forma precisa el comportamiento del endpoint de metadatos `169.254.169.254` (soportando tanto el modo vulnerable IMDSv1 como el flujo orientado a sesión de IMDSv2) y sirve una aplicación web con una vulnerabilidad de SSRF en el puerto `8080`.
+* *Recurso Lab 1:* Emulador de Cómputo Vulnerable y Servicio IMDS (`imdsv1_service.py`), este script en Flask emula de forma precisa el comportamiento del endpoint de metadatos `169.254.169.254` (soportando tanto el modo vulnerable IMDSv1 como el flujo orientado a sesión de IMDSv2) y sirve una aplicación web con una vulnerabilidad de SSRF en el puerto `8080`.
 * Enviar una carga útil a la aplicación vulnerable para forzar una consulta `GET` no autenticada contra el servicio de metadatos local:
 
 <img width="439" height="160" alt="image" src="https://github.com/user-attachments/assets/1ef49183-666a-4e3b-b5a1-8c9d401ba22a" />
@@ -99,7 +99,8 @@ curl -s -X POST http://localhost:8080/admin/remediate_imds
 
 ## **Entregable / Enlace con el Lab 2:**
 
+* Archivo `audit_events.json` que contiene el volcado íntegro de registros de llamadas a la API generados durante esta actividad (CloudTrail / Azure Activity Logs simulados).
+
 ```
 python3 generate_lab1_telemetry.py
 ```
-Archivo `audit_events.json` que contiene el volcado íntegro de registros de llamadas a la API generados durante esta actividad (CloudTrail / Azure Activity Logs simulados).
