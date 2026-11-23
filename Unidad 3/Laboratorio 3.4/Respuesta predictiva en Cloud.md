@@ -54,9 +54,11 @@ python soar_resilient_playbook.py
 
 1. El intento del adversario de ejecutar cloudtrail: StopLogging es interceptado y denegado por la política de control de la organización raíz (SCP), garantizando la integridad de la auditoría.
 2. Neutralización Adversarial por Throttling: Las llamadas a la API para aplicar la contención sufren rechazos estocásticos simulados (HTTP 429 RateLimitExceeded).
-3. Resiliencia Adaptativa: El algoritmo SOAR aplica retroceso exponencial progresivo ($T_{\text{wait}} = 2^{\text{attempt}} \cdot 0.1s + \text{jitter}$), reintentando las operaciones de contención hasta ejecutarlas satisfactoriamente.
+3. Resiliencia Adaptativa: El algoritmo SOAR aplica retroceso exponencial progresivo `($T_{\text{wait}} = 2^{\text{attempt}} \cdot 0.1s + \text{jitter}$)`, reintentando las operaciones de contención hasta ejecutarlas satisfactoriamente.
 
 ## Verificación: 
-* Comprueba que la salida final confirme la aplicación exitosa de la directiva `IDENTIFICA LA DIRECTIVA` sobre el rol comprometido y la reasignación de la interfaz de red de la instancia i-0cryptominer001 hacia el grupo de seguridad de cuarentena sg-isolated-quarantine.
+1. Comprobar que la salida final confirme la aplicación exitosa de la directiva `IDENTIFICA LA DIRECTIVA` sobre el rol comprometido y la reasignación de la interfaz de red de la instancia i-0cryptominer001 hacia el grupo de seguridad de cuarentena sg-isolated-quarantine.
 
 ## Entregable
+* Realiza la modificación necesaria sobre el detector SOAR para lograr la contención, deteniendo la evasión adversaria
+* Envía el archivo *.py generado.
