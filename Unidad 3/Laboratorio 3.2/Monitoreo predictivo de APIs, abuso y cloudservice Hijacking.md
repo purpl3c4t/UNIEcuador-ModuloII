@@ -1,5 +1,5 @@
 # Laboratorio 2: Monitoreo Predictivo de APIs y Detección de Secuestro de Servicios
-* **Duración estimada:** 30 minutos.
+
 * **Insumos requeridos:** El dataset de eventos `audit_events.json` exportado en el Laboratorio 1, enriquecido con telemetría de fondo (actividad legítima de desarrollo).
 
 ## Objetivos de Aprendizaje
@@ -9,6 +9,9 @@
 3. Detectar intentos de aprovisionamiento no autorizado orientados a *cloudservice hijacking* (despliegue de cómputo para minería o proxies C2).
 
 ## Marco teórico
+* **Ingesta de Auditoría:** Procesamiento de eventos en formato CloudTrail/Activity Logs sin recurrir a inspección de paquetes TCP.
+* **Detección Predictiva:** Identificación de la identidad anómala mediante la combinación de ráfagas de denegación ($\ge 3$ en 5 min) y análisis de entropía de agente.
+* **Identificación del Secuestro:** Localización del intento de despliegue de cómputo GPU (p3.8xlarge) y persistencia serverless (BackdoorPrivEsc).
 
 ## Guía Paso a Paso
 
