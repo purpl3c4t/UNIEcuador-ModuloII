@@ -61,4 +61,13 @@ python soar_resilient_playbook.py
 
 ## Entregable
 * Realiza la modificación necesaria sobre el detector SOAR para lograr la contención, deteniendo la evasión adversaria
-* Envía el archivo *.py generado.
+* Realizar el archivo de evidencia que entregaría la siguiente salida partiendo de la ejecución de `soar_resilient_playbook.py`
+
+```json
+  { "incident\_id":
+  "ALT-AI-2026-9921",
+  "containment\_timestamp": "2026-11-11T03:36:12Z",
+  "status": "CONTAINED\_AND\_ISOLATED",
+  "actions\_taken": [ { "target": "arn:aws:iam::123456789012:role/DevSecOpsInstanceRole",
+  "action": "PutRolePermissionsBoundary", "policy": "arn:aws:iam::123456789012:policy/DenyAllBoundary", "result": "APPLIED" }, { "target": "arn:aws:iam::123456789012:role/DevSecOpsInstanceRole", "action": "RevokeActiveSessions", "method": "Timestamp\_Invalidation\_Policy", "result": "SESSIONS\_TERMINATED" }, { "target": "i-0cryptominer001", "action": "ModifyNetworkInterfaceAttribute", "assigned\_security\_group": "sg-isolated-quarantine", "result": "NETWORK\_ISOLATED" } ], "resilience\_metrics": { "throttling\_attempts\_retried": 2, "backoff\_recovery\_time\_seconds": 0.45, "telemetry\_tampering\_blocked\_by\_scp": true } }
+```
