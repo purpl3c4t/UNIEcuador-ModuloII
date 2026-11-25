@@ -32,9 +32,7 @@ recursos/
 │   ├── simulate_poisoning.py          # Demostrador de prevención de DoS autoinfligido
 │   ├── sanitized_firewall_rules.json  # Artefacto generado: Reglas perimetrales aprobadas
 │   └── sanitizer_drop_audit.json      # Artefacto generado: Registro de amenazas mitigadas
-└── project_ccdp/                      # Proyecto Integrador
-    ├── ccdp_orchestrator.py           # Orquestador del flujo end-to-end unificado
-    └── ccdp_executive_report.json     # Artefacto generado: Reporte ejecutivo de estado
+└── 
 ```
 
 ---
