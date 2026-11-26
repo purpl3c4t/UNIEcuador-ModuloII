@@ -14,15 +14,10 @@ Las pasarelas de seguridad perimetrales convencionales (antivirus y gateways de 
 ---
 
 ## Recursos Involucrados:
-* **Entorno de Ejecución:** Python 3.12 con bibliotecas `catboost`, `pandas`, `numpy`, `scikit-learn`.
 * **Datos de Entrada:** `data/bec_fraud_dataset.csv` (18 muestras balanceadas de flujos legítimos y correos de fraude BEC del CEO).
 * **Scripts de Procesamiento:**
   * `lab3_bec_catboost/feature_extraction.py` (Módulo extractor de 12 dimensiones psicolingüísticas y de cabecera).
   * `lab3_bec_catboost/train_catboost_bec.py` (Módulo de entrenamiento, medición de latencia y cálculo de SHAP).
-* **Artefactos de Salida:**
-  * `lab3_bec_catboost/bec_catboost.cbm` (Binario serializado del modelo CatBoost).
-  * `lab3_bec_catboost/shap_importance_report.json` (Informe estructurado de importancia de características).
-
 ---
 
 ## Metodología Paso a Paso
